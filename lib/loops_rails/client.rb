@@ -12,8 +12,8 @@ module LoopsRails
       end
     end
 
-    def api_key
-      @api_key ||= ApiKey.new(@conn)
+    def test_api_key
+      TestApiKey.new(@conn).test
     end
 
     def contacts
