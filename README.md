@@ -21,7 +21,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 ```ruby
 client = LoopsRails::Client.new(api_key: "your_api_key")
 
-client.api_keys.test
+client.test_api_key
 client.contacts.create(email: "john@example.com")
 client.transactional_emails.send(
   email: "john@example.com",
