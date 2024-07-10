@@ -23,7 +23,10 @@ client = LoopsRails::Client.new(api_key: "your_api_key")
 
 client.api_keys.test
 client.contacts.create(email: "john@example.com")
-client.transactional_emails.send(email: "john@example.com", transactional_id: "your_transactional_id")
+client.transactional_emails.send(
+  email: "john@example.com",
+  transactional_id: "your_transactional_id"
+)
 ```
 
 ## Development
@@ -31,6 +34,15 @@ client.transactional_emails.send(email: "john@example.com", transactional_id: "y
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+## TODO
+
+- [X] Add support for the `/api-key` endpoint
+- [X] Add support for the `/contacts` endpoint
+- [X] Add support for the `/transactional` endpoint
+- [ ] Add support for the `/lists` endpoint
+- [ ] Add support for the `/events` endpoint
+- [ ] Add support for the `/customFields` endpoint
 
 ## Contributing
 
