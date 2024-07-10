@@ -1,6 +1,6 @@
 module LoopsRails
   class ApiKey < ApiResource
-    def test_api_key
+    def test
       response = @conn.get('api-key')
       parse_response(response)
     end
