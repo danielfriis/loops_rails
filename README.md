@@ -40,9 +40,9 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 - [X] Add support for the `/api-key` endpoint
 - [X] Add support for the `/contacts` endpoint
 - [X] Add support for the `/transactional` endpoint
-- [ ] Add support for the `/lists` endpoint
-- [ ] Add support for the `/events` endpoint
-- [ ] Add support for the `/customFields` endpoint
+- [X] Add support for the `/lists` endpoint
+- [X] Add support for the `/events` endpoint
+- [X] Add support for the `/customFields` endpoint
 
 ## Contributing
 
