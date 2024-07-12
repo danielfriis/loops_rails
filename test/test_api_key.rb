@@ -7,9 +7,9 @@ class TestApiKey < Minitest::Test
     @client = LoopsRails::Client.new
   end
 
-  def test_test_api_key
+  def test_test
     VCR.use_cassette("test_api_key") do
-      response = @client.test_api_key
+      response = @client.api_key.test
       assert_equal true, response["success"]
     end
   end

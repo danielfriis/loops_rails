@@ -24,9 +24,11 @@ module LoopsRails
       raise ArgumentError, "Either email or user_id must be provided" if email.nil? && user_id.nil?
 
       params = { email: email, userId: user_id }.compact
+
       response = @conn.get("contacts/find") do |req|
         req.params = params
       end
+
       parse_response(response)
     end
 

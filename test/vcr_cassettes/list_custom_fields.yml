@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://app.loops.so/api/v1/api-key
+    uri: https://app.loops.so/api/v1/contacts/customFields
     body:
       encoding: US-ASCII
       string: ''
@@ -23,11 +23,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 12 Jul 2024 19:54:52 GMT
+      - Fri, 12 Jul 2024 19:52:13 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Content-Length:
-      - '43'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
       Access-Control-Allow-Credentials:
@@ -58,7 +58,7 @@ http_interactions:
         https://zapier.com;    media-src ''self'' data:;    worker-src ''self'' blob:;    base-uri
         ''self'';    form-action ''self'';    frame-ancestors ''none'';    upgrade-insecure-requests;'
       Etag:
-      - '"145k07nbhhs17"'
+      - W/"3iqslebvv83c"
       Permissions-Policy:
       - accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(),
         cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(),
@@ -73,7 +73,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Matched-Path:
-      - "/api/v1/api-key"
+      - "/api/v1/contacts/customFields"
       X-Ratelimit-Limit:
       - '10'
       X-Ratelimit-Remaining:
@@ -81,15 +81,16 @@ http_interactions:
       X-Vercel-Cache:
       - BYPASS
       X-Vercel-Id:
-      - arn1::iad1::qphjx-1720814091987-e94c5f169652
+      - arn1::iad1::hr6sw-1720813932834-1b203a68194f
       Cf-Cache-Status:
       - DYNAMIC
       Server:
       - cloudflare
       Cf-Ray:
-      - 8a23966a8be3abdb-CPH
+      - 8a239287e8571d06-CPH
     body:
-      encoding: UTF-8
-      string: '{"success":true,"teamName":"Typecheck ApS"}'
-  recorded_at: Fri, 12 Jul 2024 19:54:52 GMT
+      encoding: ASCII-8BIT
+      string: '[{"key":"name","label":"Name","type":"string"},{"key":"contactProperties","label":"Contact
+        Properties","type":"string"}]'
+  recorded_at: Fri, 12 Jul 2024 19:52:14 GMT
 recorded_with: VCR 6.2.0

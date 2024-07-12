@@ -12,12 +12,24 @@ module LoopsRails
       end
     end
 
-    def test_api_key
-      TestApiKey.new(@conn).test
+    def api_key
+      @api_key_endpoint ||= ApiKey.new(@conn)
     end
 
     def contacts
       @contacts ||= Contacts.new(@conn)
+    end
+
+    def custom_fields
+      @custom_fields ||= CustomFields.new(@conn)
+    end
+
+    def lists
+      @lists ||= Lists.new(@conn)
+    end
+
+    def events
+      @events ||= Events.new(@conn)
     end
 
     def transactional_emails
